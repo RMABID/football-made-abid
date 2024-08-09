@@ -11,6 +11,7 @@ body{
     scroll-behavior: smooth;
 }
 body{
+    width: 100%;
     font-family: "Poppins", sans-serif;
 }
 ul{
@@ -45,6 +46,9 @@ img{
     border-radius: 5px;
     color: rgb(255, 255, 255);
     background-color: rgb(224, 44, 109);
+}
+.nav-menu-icon{
+    display: none;
 }
 
 
@@ -123,4 +127,147 @@ img{
 .game-card p{
     width: 300px;
     height: 104px;
+}
+
+
+
+.highlights-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 51px;
+}
+.highlights-content h1{
+    width: 470px;
+    height: 80px;
+    margin-top: 15rem;
+    margin-bottom: 5rem;
+    font-weight: 700;
+    font-size: 48px;
+    color: rgb(10, 8, 38);
+}
+.highlights-content p{
+    width: 404px;
+    height: 113px;
+    /* border: 1px solid red; */
+    font-weight: 400;
+    font-size: 16px;
+    color: rgb(108, 108, 108);
+}
+.highlights-image{
+    width: 567px;
+    height: 427px;
+    margin-top: 11rem;
+}
+
+
+footer{
+    margin-top: 8rem;
+    margin-bottom: 3rem;
+}
+.footer-container{
+    width: 483px;
+    height: 213px;
+    margin: auto;
+    text-align: center;
+}
+.footer-logo{
+    width: 490px;
+    height: 110px;
+    /* background-color: rgb(19, 22, 26); */
+    /* border: 1px solid red; */
+}
+.footer-icon{
+    width: 52px;
+    height: 52px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 26px;
+}
+.footer-icon i{
+    margin: auto;
+    border-radius: 50%;
+    /* gap: 15px; */
+    /* background-color: rgb(150, 155, 171); */
+    /* border: 2px solid rgb(236, 223, 223); */
+    font-size: 36px;
+    text-align: center;
+    align-items: center;
+}
+#copy-title{
+    margin-top: 15px;
+    /* margin-bottom: 150px; */
+    font-weight: 400;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+}
+
+
+@media screen and (max-width: 576px) {
+    
+    .container{
+        max-width: 330px;
+        margin: auto;
+    }
+    .nav-links{
+        display: none;
+    }
+    .nav-menu-icon{
+        display: block;
+        font-size: 36px;
+        color: #c71717;
+    }
+    .banner-section{
+        flex-direction: column;
+    }
+    .banner-image{
+        width: 329px;
+        height: 260px;
+    }
+    .banner-content h1{
+        width: 278px;
+        height: 188px;
+        font-size: 36px;
+    }
+    .player-card{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .highlights-section{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .highlights-image{
+        width: 328px;
+        height: 248px;
+
+    }
+    .highlights-content h1{
+        width: 320px;
+        height: 80px;
+        /* margin: 0 auto; */
+        font-size: 36px;
+    }
+    .highlights-content p{
+        width: 329px;
+        height: 143px;
+        /* text-align: center; */
+    }
+    .footer-logo{
+        width: 280px;
+    }
+    /* .footer-icon{
+        margin-left: 130px;
+        text-align: center;
+    }
+    #copy-title{
+        margin-left: -155px;
+    } */
+
+    .footer-container{
+        width: 328px;
+    }
 }
